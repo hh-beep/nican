@@ -1,0 +1,22 @@
+$white: #ECF0F8;
+$blue: #6A8CFA;
+$green: #4FA270;
+$black: #2C4678;
+
+
+
+
+
+.mask {
+  background-image: url("../../../Images/bg-mask.png");
+  background-repeat: repeat;
+}
+.logoIcon {
+  
+  @media ( max-width: 767px ) {
+    width: 100%;
+  }
+  @media ( max-width: 400px ) {
+    width: auto;
+  }
+}

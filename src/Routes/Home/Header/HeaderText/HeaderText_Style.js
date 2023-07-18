@@ -14,7 +14,7 @@ const lg = {
   containerText: " lg:text-start lg:text-xl "
 }
 const xl = {
-  container: " xl:w-2/6 xl:h-2/6 ",
+  container: " xl:w-2/6 xl:h-3/6 ",
   containerTittle: "",
   containerText: " xl:text-2xl "
 }
@@ -34,7 +34,7 @@ function HeaderText_Style() {
 
 
     containerTittle: 
-      " text-black " +
+      " text-preto " +
         sm.containerTittle +
         md.containerTittle +
         lg.containerTittle +
@@ -42,7 +42,7 @@ function HeaderText_Style() {
 
 
     containerText: 
-      " text-black " +
+      " text-preto " +
         sm.containerText +
         md.containerText +
         lg.containerText +

@@ -5,12 +5,11 @@ module.exports = {
   ],
   theme: {
     colors: {
-      "ultra": "#F8F9FC",
-      "white": "#ECF0F8",
-      "blue": "#6A8CFA",
-      "green": "#4FA270",
-      "black": "#2C4678",
-      "d-black": "#0A1B62",
+      "verde": "#B4CF55",
+      "preto": "#2B3F6E",
+      "branco": "#F6F9EB",
+      "azul": "#5D93CC",
+      "b-claro": "#FBFDF7",
     },
     
   },

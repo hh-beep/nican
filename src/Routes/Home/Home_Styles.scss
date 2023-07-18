@@ -1,0 +1,33 @@
+$verde: #B4CF55;
+$preto: #2B3F6E;
+$branco: #F6F9EB;
+$azul: #5D93CC;
+$b-claro: #FBFDF7;
+
+
+
+
+
+@mixin telaCell() {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+@mixin telaTablet() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+
+
+
+
+/*  Banner Styles  */
+.bgParallax {
+  background-image: url("../../Images/background.png");
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

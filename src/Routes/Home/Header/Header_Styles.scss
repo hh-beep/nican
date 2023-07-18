@@ -1,22 +1,33 @@
-$white: #ECF0F8;
-$blue: #6A8CFA;
-$green: #4FA270;
-$black: #2C4678;
+$verde: #B4CF55;
+$preto: #2B3F6E;
+$branco: #F6F9EB;
+$azul: #5D93CC;
+$b-claro: #FBFDF7;
 
 
 
 
 
 .mask {
-  background-image: url("../../../Images/bg-mask.png");
-  background-repeat: repeat;
+  //background-image: url("../../../Images/bg-mask.png");
+  //background-repeat: repeat;
 }
+
+
 .logoIcon {
-  
-  @media ( max-width: 767px ) {
-    width: 100%;
+  @media ( min-width: 400px ) and ( max-width: 767px ) {
+    //width: 10rem;
+    width: 60%;
   }
-  @media ( max-width: 400px ) {
-    width: auto;
+  @media ( max-width: 500px ) {
+
+    height: max-content;
+  }
+}
+
+
+.cardHeader {
+  @media (min-width: 1024px) {
+    border-radius: 1rem 1rem 0 0;
   }
 }

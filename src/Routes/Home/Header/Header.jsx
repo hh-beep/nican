@@ -2,7 +2,7 @@ import React from 'react';
 
 /*  Components  */
 import HeaderImage from "./HeaderImage/HeaderImage";
-import HeaderText from './HeaderText/HeaderText';
+import HeaderText from "./HeaderText/HeaderText";
 
 /*  Styles  */
 import "./Header_Styles.scss"

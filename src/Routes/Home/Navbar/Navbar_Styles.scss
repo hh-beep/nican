@@ -1,0 +1,236 @@
+$verde: #B4CF55;
+$preto: #2B3F6E;
+$branco: #F6F9EB;
+$azul: #5D93CC;
+$b-claro: #FBFDF7;
+
+
+
+
+
+/*  Animations  */
+@keyframes hiddeListAnimation {
+  from {
+    opacity: 1;
+    height: 35rem;
+  }
+  to {
+    height: 1%;
+  }
+}
+
+@keyframes shownListAnimation {
+  from {
+    height: 1%;
+  }
+  to {
+    display: flex;
+    height: 35rem;
+  }
+}
+
+
+@mixin telaTablet() {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+
+
+
+
+.navbar {
+  z-index: 2;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 15%;
+  justify-content: space-around;
+  align-items: center;
+
+
+
+  & &NormalList {
+    display: flex;
+    background-color: $preto;
+    width: 75%;
+    height: 75%;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: space-around;
+
+
+    &Box {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+
+    @include telaTablet() {
+      display: none;
+    }
+  }
+
+
+  .hiddeList { 
+    display: none;
+
+
+    @include telaTablet() {
+      position: absolute;
+      top: 7rem;
+      height: 0;
+      animation: hiddeListAnimation 200ms;
+
+      .navbarList__ItemHidden {
+        opacity: 0;
+        display: none;  
+      }
+    }
+  }
+  .shownList {
+    display: none;
+
+
+    @include telaTablet() {
+      height: 35rem;
+      animation: shownListAnimation 200ms;
+      position: absolute;
+      top: 7rem;
+      justify-content: space-around;
+      align-items: start;
+      background-color: $preto;
+      display: flex;
+
+      .navbarHiddenListBox {
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+      }
+    }
+  }
+
+
+  & &List__Item {
+    display: flex;
+    height: max-content;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
+
+
+    &Hidden, &Normal {
+      font-size: 1.375rem;
+      color: $azul;
+      transition: 200ms all;
+
+
+      &.selected, &.selected:hover {
+        background-color: $azul;
+        color: $preto;
+        cursor: default;
+      } 
+
+
+      &:hover {
+        background-color: $b-claro;
+        color: $preto;
+      }
+    }
+  }
+
+
+  & &Hamburger {
+    display: none;
+
+    @include telaTablet() {
+      display: flex;
+      width: 80%;
+      height: 100%;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: $preto;
+
+
+      &Normal {
+        &:hover {
+          .navbarHamburgerIcon {
+            &-Detail {
+              background-color: $branco;
+              height: 15%;
+            }
+          }
+          .navbarHamburgerSection {
+            margin-left: 3rem;
+            &-Text {  
+              color: $branco;
+              font-size: 1.75rem;  
+            }
+          }
+        }
+      }
+      &Active {
+        .navbarHamburgerIcon {
+          
+          &-Detail {
+            background-color: $branco;
+            height: 15%;
+          }
+          .top {  width: 30%  }
+          .mid {  width: 60%  }
+          .bot {  width: 90%  }
+        }
+        .navbarHamburgerSection {
+          margin-left: 3rem;
+
+          &-Text {  
+            color: $branco;  
+            font-size: 1.75rem;
+          }
+        }
+      }
+
+
+      &Icon {
+        width: 75px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        //background-color: $verde;
+
+        &-Detail {
+          width: 100%;
+          height: 10%;
+          background-color: $azul;
+          border-radius: 50px;
+        }
+      }
+
+
+      &Section {
+        margin-left: 2rem;
+
+        &-Text {
+          font-size: 1.5rem;
+          color: $azul;
+        }
+      }
+    }
+  }
+
+  @include telaTablet() {
+    background-color: $preto;
+    height: 12.5%;
+  }
+}

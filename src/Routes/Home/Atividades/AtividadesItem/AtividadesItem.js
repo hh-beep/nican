@@ -19,7 +19,7 @@ const style = AtividadesItem_Style();
 
 const AtividadesItem = ({  item, whatKey  }) => {
 
-  const {  ImagemPrincipal, Titulo, Resumo, Data  } = item;
+  const {  ImagemPrincipal, Titulo, Data  } = item;
 
   function verifyCard() {
     if (whatKey === 0) {
@@ -31,11 +31,6 @@ const AtividadesItem = ({  item, whatKey  }) => {
   }
 
 
-
-  //console.log(item)
-
-
-  
   return (
     <section 
       className={  verifyCard()  }
@@ -51,7 +46,6 @@ const AtividadesItem = ({  item, whatKey  }) => {
       <AtividadesItemTextos 
         isFirst={  whatKey === 0 ? true : false  }
         Titulo={  Titulo  }
-        Resumo={  Resumo  }
         Data={  Data  }
       />
 

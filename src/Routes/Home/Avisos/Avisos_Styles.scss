@@ -1,0 +1,22 @@
+$verde: #B4CF55;
+$preto: #2B3F6E;
+$branco: #F6F9EB;
+$azul: #5D93CC;
+$b-claro: #FBFDF7;
+
+
+
+
+
+.cardInvertido {
+  cursor: pointer;
+  &:hover {
+    background-color: $b-claro;
+    transform: scale(1.025);
+    box-shadow: 10px 10px 0px 0px $verde;
+
+    @media (max-width: 640px) {
+      box-shadow: none;
+    }
+  }
+}

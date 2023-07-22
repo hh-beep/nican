@@ -25,12 +25,12 @@ $b-claro: #FBFDF7;
 
 
 .borderButton {
-  border: 5px solid rgba($verde, 2);
+  border: 5px solid $azul;
   cursor: pointer;
   transition: 150ms all;
 
   &:hover {
-    background-color: $verde;
+    background-color: $azul;
     transform: scale(1.075);
     color: $b-claro;
     box-shadow: 5px 5px $preto;

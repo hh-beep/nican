@@ -9,7 +9,7 @@ const md = {
   containerText: " "
 }
 const lg = {
-  container: " lg:items-start lg:w-5/12 lg:h-2/6 lg:order-1 ",
+  container: " lg:items-start lg:w-5/12 lg:h-3/6 lg:order-1 ",
   containerTittle: " lg:text-start lg:text-6xl ",
   containerText: " lg:text-start lg:text-xl "
 }

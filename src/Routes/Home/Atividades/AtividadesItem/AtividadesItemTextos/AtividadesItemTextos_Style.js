@@ -35,7 +35,7 @@ function AtividadesItemTextos_Style() {
 
 
     containerTittle: 
-      "  " +
+      " text-preto " +
         sm.containerTittle +
         md.containerTittle +
         lg.containerTittle +
@@ -43,11 +43,10 @@ function AtividadesItemTextos_Style() {
 
 
     containerData: 
-      "  " +
+      " text-preto " +
         sm.containerData +
         md.containerData +
-        lg.containerData +
-        xl.containerData ,
+        lg.containerData ,
 
 
 
@@ -62,7 +61,7 @@ function AtividadesItemTextos_Style() {
 
 
     containerSpecialTittle:
-      "  " +
+      " text-preto " +
         sm.containerSpecialTittle +
         md.containerSpecialTittle +
         lg.containerSpecialTittle + 

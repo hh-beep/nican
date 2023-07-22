@@ -17,6 +17,7 @@ const AtividadesItemImagem = ({  isFirst, ImagemPrincipal: img  }) => {
   return (
     <section className={  style.container  }>
       <img 
+        alt="imagem em um card sobre as atividades"
         src={  img  }
         className={  isFirst ? style.containerSpecialImage : style.containerImage  }
       />

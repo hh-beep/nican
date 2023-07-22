@@ -5,6 +5,7 @@ import {  createHashRouter  } from "react-router-dom";
 /*  Imports  */
 import Home from "./Home/Home.jsx";
 import Tudo from "./Tudo/Tudo.jsx";
+import Avisos from "./Avisos/Avisos.jsx";
 import Contatos from "./Contatos/Contatos.jsx";
 import Atividades from "./Atividades/Atividades.jsx";
 
@@ -27,6 +28,10 @@ const routes = createHashRouter([
   {
     path: "/Tudo/",
     Component: Tudo,
+  },
+  {
+    path: "Avisos",
+    Component: Avisos
   },
   {
     path: "*",

@@ -2,11 +2,12 @@
 import React from 'react';
 
 /*  Components  */
+import Map from "./Map/Map.jsx";
 import Navbar from "./Navbar/Navbar.jsx";
 import Header from "./Header/Header.jsx";
-import Sobre from "./Sobre/Sobre.jsx";
+import Avisos from "./Avisos/Avisos.jsx";
+import Rodape from "./Rodape/Rodape.jsx";
 import Atividades from "./Atividades/Atividades.jsx";
-import Noticias from "./Noticias/Noticias.jsx";
 
 /*  Style  */
 import Home_Style from "./Home_Style";
@@ -28,9 +29,10 @@ const Home = () => {
 
       <Navbar />
       <Header />
-      {/*<Sobre />*/}
       <Atividades />
-      <Noticias />
+      <Avisos />
+      <Map />
+      <Rodape />
       
     
     </section>

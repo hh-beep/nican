@@ -27,8 +27,7 @@ const SobreTitulo = ({  items  }) => {
       </h1>
       
       <Link 
-        to="/Atividades" 
-        state={{  items: items  }}
+        to="/Atividades/"
         className={  "borderButton" + style.containerButton  }
       >
         Ver Tudo!

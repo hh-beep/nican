@@ -1,7 +1,7 @@
 import React from 'react';
 
 /*  Data  */
-import NavbarData from "./NavbarData";
+import Navbar_Data from "./Navbar_Data";
 
 /*  Components  */
 import NavbarHiddenList from "./NavbarHiddenList/NavbarHiddenList";
@@ -23,7 +23,7 @@ const style = Navbar_Style();
 
 const Navbar = () => {
 
-  const data = NavbarData();
+  const data = Navbar_Data();
 
 
   return (

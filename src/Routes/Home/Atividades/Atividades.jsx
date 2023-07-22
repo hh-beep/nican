@@ -47,9 +47,7 @@ const Atividades = () => {
       <section className={  style.containerSection  }>
 
 
-      <AtividadesTitulo 
-        items={  todasAtividades  }
-      />
+      <AtividadesTitulo />
 
       <section className={  style.containerSectionList  }>
         {!loading ? 

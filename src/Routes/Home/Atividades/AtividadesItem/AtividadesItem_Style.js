@@ -34,7 +34,7 @@ function AtividadesItem_Style() {
 
 
     specialContainer: 
-      " card border-verde lg:border-preto " +
+      " card border-verde " +
         same +
         sm.specialContainer +
         md.specialContainer +

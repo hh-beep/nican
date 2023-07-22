@@ -6,6 +6,15 @@ import {
   useLocation
 } from "react-router-dom";
 
+/*  Style  */
+import NavbarItem_Style from "./NavbarItem_Style";
+
+
+
+
+
+const style = NavbarItem_Style();
+
 
 
 
@@ -16,10 +25,12 @@ const NavbarItem = ({  isHidden, item  }) => {
   const currentPath = useLocation().pathname;
 
 
-  const verify = (type, current, pathName) => {
-    if (type === "container") {
+  const verify = (current, pathName) => {
       if (!isHidden && current === pathName) {
         return " selected navbarList__ItemNormal "
+      }
+      else if (isHidden && current === pathName) {
+        return " selected navbarList__ItemHidden "
       }
       else if (isHidden) {
         return " navbarList__ItemHidden "
@@ -27,24 +38,15 @@ const NavbarItem = ({  isHidden, item  }) => {
       else {
         return " navbarList__ItemNormal "
       }
-    }
-    else {
-      if (isHidden) {
-        return " navbarList__ItemHiddenText "
-      }
-      else {
-        return " navbarList__ItemNormalText "
-      }
-    }
   }
 
 
   return (
     <Link
       to={  path  }
-      className={  verify("container", currentPath, path) + " navbarList__Item "}
+      className={  verify(currentPath, path) + " navbarList__Item " + style.container  }
     >
-      <p className={  verify("text") + " navbarList__ItemText "  }>
+      <p className={  style.containerText  }>
         {  name  }
       </p>
     </Link>

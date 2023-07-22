@@ -13,7 +13,7 @@ const style = AtividadesItemTextos_Style();
 
 
 
-const AtividadesItemTextos = ({  isFirst, Titulo, Resumo, Data  }) => {
+const AtividadesItemTextos = ({  isFirst, Titulo, Data  }) => {
   return (
     <section className={  isFirst ? style.containerSpecial : style.container  }>
 

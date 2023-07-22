@@ -1,4 +1,4 @@
-function NavbarData() {
+function Navbar_Data() {
   return [
     {
       name: "Home",
@@ -19,4 +19,4 @@ function NavbarData() {
   ]
 }
 
-export default NavbarData;
+export default Navbar_Data;

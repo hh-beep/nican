@@ -1,6 +1,6 @@
 # Nican Mopohua Website
 
-[!Nican'swebsite](./src/Assets/README_Image.png)
+![Nican'swebsite](./src/Assets/README_Image.png)
 
 
 

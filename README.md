@@ -44,5 +44,6 @@ yarn dev
 ...
 npm install tailwindcss @tailwindcss/vite
 npm i react-router
+yarn add -D sass-embedded
 ...
 ```

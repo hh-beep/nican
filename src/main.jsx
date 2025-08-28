@@ -12,6 +12,7 @@ import {
 } from "react-router";
 
 import Home from './Routes/Home/Home';
+import Sobre from './Routes/Sobre/Sobre';
 import Error from './Routes/Error/Error';
 
 
@@ -23,7 +24,7 @@ const routesPaths = createHashRouter([
     element: <Home />
   },
   {
-    path: "/Sobre",
+    path: "/Sobre/",
     element: <Sobre />
   },
   {

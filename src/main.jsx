@@ -3,7 +3,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 //  -- Style --
-import './assets/global.css';
+import './Assets/global.css';
 
 //  -- Configs of React Router + Routes --
 import {  

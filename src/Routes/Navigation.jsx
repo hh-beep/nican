@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useLocation } from "react-router"
 
 //  -- Style --
-import "./NavigationStyle.scss"
+import "./Navigation.scss"
 
 
 

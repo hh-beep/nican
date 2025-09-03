@@ -1,33 +1,58 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router"
+import { useLocation, Link } from "react-router"
 
-//  -- Style --
+//  -- Style --  //
 import "./Navigation.scss"
+import LogoBlack from "../Assets/Logo_Black.svg"
 
 
 
 const Navigation = () => {
 
     const thisRoute = useLocation().pathname;
-
-    const [ heightStyle, setHeightStyle  ] = useState("");
-
-    
-    useEffect(  () => {
-        if (  document.documentElement.scrollHeight > 1900  ) {
-            setHeightStyle("heigh")
-        }
-        else {
-            setHeightStyle("")
-        }
-
-        console.log(document.documentElement.scrollHeight);
-    })
+    const paths = [
+        {  name: "Início", path: "/"  },
+        {  name: "Sobre", path: "/Sobre/"  },
+        {  name: "Ramos", path: "/Ramos/"  }
+    ]
 
 
     return (
-        <nav className={"NavBar " + heightStyle}>
-            <h1>Navegation</h1>
+        <nav className={"NavBar "}>
+
+            {/*  On Laptop-Pc  */}
+            <section className="Laptop">
+                <section className="Laptop_Name">
+                    <img className="Laptop_Name__Image" src={  LogoBlack  }/>
+                    <h1 className="Laptop_Name__Tittle">Nican Mopohua</h1>
+                </section>
+
+
+                {/*  Laptop Navigations Stuff  */}
+                <ul className="Laptop_Navigations">
+                    {
+                        paths.map(  path => {
+                            console.log()
+                            return (
+                                <Link 
+                                    className={"Laptop_Navigations__Link " + (thisRoute == path.path ? "current" : "")} 
+                                    to={   path.path  }
+                                >
+
+                                    <p className="Laptop_Navigations__Link-Text">
+                                        {  path.name  }
+                                    </p>
+                                </Link>
+                            )
+                        })
+                    }
+                </ul>
+            </section>
+
+
+            
+
+
         </nav>
     )
 }

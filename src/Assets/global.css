@@ -25,6 +25,9 @@
 
   transition: 300ms all;
 }
-* section {
+main>section, body {
     background-color: #E0E0E0;
+}
+a {
+  text-decoration: none;
 }

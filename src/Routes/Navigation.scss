@@ -1,7 +1,76 @@
 .NavBar {
     //position: -webkit-sticky;
     position: fixed;
+    z-index: 3;
     top: -1px;
-    //height: 20vh;
-    //width: 100vw;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    //  -- Tying a sort of glassmorphism stuff
+    background-color: #E0E0E040;
+    backdrop-filter: blur(3px);
+    border-bottom: 2px solid #2c2c2c;
+     
+
+     height: 12.5vh;
+
+
+
+     .Laptop { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 80%;
+
+
+        &_Name {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 35%;
+            height: 100%;
+
+            &__Image {
+                height: 80%;
+            }
+            &__Tittle {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+
+
+        &_Navigations {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 40%;
+
+
+            &__Link {
+                border-bottom: 3px solid #2c2c2c;
+
+                
+                &-Text {
+                    color: #2c2c2c;
+                    font-size: 1.25rem;
+                }
+                &:hover {
+                    transform: scale(1.125);
+                    border-color: #E0E0E0;
+                }
+            }
+            &__Link.current {
+                border-bottom: 5px solid #E0E0E0;
+                transform: scale(1.125);
+                cursor: default;
+                &:hover {  transform: scale(1.125); }
+            }
+        }
+     }
 }

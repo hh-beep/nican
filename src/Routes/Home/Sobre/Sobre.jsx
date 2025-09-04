@@ -1,6 +1,6 @@
 //  -- Components --  //
 import Resumo from "./Resumo/Resumo";
-import Ramo from "./Ramo/Ramo";
+import Ramos from "./Ramo/Ramos";
 
 //  -- Styles --  //
 import "./Sobre.scss";
@@ -11,6 +11,7 @@ const Sobre = () => {
     return (
         <section className="Sobre">
             <Resumo />
+            <Ramos />
         </section>
     )
 }

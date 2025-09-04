@@ -6,7 +6,7 @@ import "./Resumo.scss"
 const Resumo = () => {
     return (
         <section className="Resumo">
-            <h1 className="Resumo_Tittle">Quem somos?</h1>
+            <h2 className="Resumo_Tittle">Quem somos?</h2>
             <p className="Resumo_Text">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
                 Dolore beatae totam unde quas nesciunt voluptates laborum quidem 

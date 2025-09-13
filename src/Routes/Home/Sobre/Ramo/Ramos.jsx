@@ -1,3 +1,6 @@
+//  -- Imports --  //
+import {  Link  } from "react-router";
+
 //  -- Images --  //
 import Lob from "../../../../Assets/Logo_Lob.svg";
 import Esc from "../../../../Assets/Logo_Esc.svg";
@@ -6,6 +9,8 @@ import Pio from "../../../../Assets/Logo_Pio.svg";
 
 //  -- Styles Stuff --  //
 import "./Ramos.scss";
+
+
 
 
 
@@ -26,12 +31,22 @@ const Ramos = () => {
             {/*  -- Carrosel stuff --  */}
             <ul className="Ramos_List">
                 {
-                    ramos.map(  ramo => {
+                    ramos.map(  (ramo, key) => {
                         return (
-                            <section className={  "Ramos_List__Ramo " + ramo.name  }>
-                                <img className="Ramos_List__Ramo-Img" src={  ramo.img  }/>
-                                <p className="Ramos_List__Ramo-Text"></p>
-                            </section>
+                            <Link 
+                                to={  ramo.path  } 
+                                className="Ramos_List__Ramo" 
+                                id={  ramo.name  }
+                                key={  key  }
+                            >
+                                <section className="Ramos_List__Ramo-Figure" id={  ramo.name  }>
+                                    <img className="Ramos_List__Ramo-Figure--Img" src={  ramo.img  }/>
+                                </section>
+
+                                <section className="Ramos_List__Ramo-Section">
+                                    <p className="Ramos_List__Ramo-Section--Text">{  ramo.name  }</p>
+                                </section>
+                            </Link>
                         )
                     })
                 }

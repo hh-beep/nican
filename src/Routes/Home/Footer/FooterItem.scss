@@ -1,0 +1,48 @@
+.FooterItem {
+  width: 30%;
+  height: 100%;
+  display :flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  
+  &_Titulo {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.75rem;
+    color: #f2f2f2;
+    font-weight: bold;
+  }
+  &_Lista {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction :column; 
+    
+
+    &__Item {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+    
+
+      &-Imagem {
+        height: 40%;
+      }
+      &-Texto {
+        font-size: 1.25rem;
+        color :#f2f2f2;
+        font-weight: bold;
+      }
+      &-Texto.FooterLinkTexto {  font-weight: normal;  }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+//  -- Slick Details --  //
+.slick-arrow {
+  width: 10vw !important;
+  height: 10vh !important;
+  z-index: 1 !important;
+}
+.slick-next {  right: 0 !important;  }
+.slick-prev {  left: 0 !important;  }
+
+.slick-list {
+  height: 100% !important;
+  width: 100% !important;
+}
+.slick-track {
+  height: 100% !important;
+  overflow-y: hidden !important;
+}
+.slick-slide div {
+  height: 100% !important;
+}
+.slick-dots {
+  bottom: 0px !important;
+  & li button:before {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+  & li.active button {  color: #FAFAFB !important;  }
+}
+
+
+.Carrosel {
+    height: 80%;
+    width: 100%;
+
+    &_Slide {
+        height: 95%;
+        width: 100%;
+        display: flex !important;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

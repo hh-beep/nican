@@ -31,12 +31,13 @@ const Navigation = () => {
                 {/*  Laptop Navigations Stuff  */}
                 <ul className="Laptop_Navigations">
                     {
-                        paths.map(  path => {
+                        paths.map(  (path, key) => {
                             console.log()
                             return (
                                 <Link 
                                     className={"Laptop_Navigations__Link " + (thisRoute == path.path ? "current" : "")} 
                                     to={   path.path  }
+                                    key={  key  }
                                 >
 
                                     <p className="Laptop_Navigations__Link-Text">

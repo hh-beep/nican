@@ -3,11 +3,61 @@
     width: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     
     &_Tittle {
-        font-size: 1.75rem;
+        font-size: 2.25rem;
         font-weight: bold;
+        text-align: center;
+    }
+    &_List {
+        height: 75%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+
+        &__Ramo {
+            width: 20%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            background-color: #f2f2f2;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 10px;
+            border: 5px solid #2c2c2c; 
+
+            &-Figure {
+                height: 70%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                &--Img {
+                    height: 90%;
+                } 
+            }
+            &-Figure#Lobinho    {  background-color: #F1C40F;  }
+            &-Figure#Escoteiro  {  background-color: #2AA6A2;  }
+            &-Figure#Senior     {  background-color: #7B3FA1;  }
+            &-Figure#Pioneiro   {  background-color: #D6301A;  }
+
+            &-Section {
+                height: 30%;
+                width: 100%;
+                border-top: 5px solid #2c2c2c;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                &--Text  {
+                  font-weight: bold;
+                }
+            }
+        }
     }
 }

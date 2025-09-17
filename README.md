@@ -40,10 +40,12 @@ yarn dev
 
 ### Installation
 ```bash
-// "Here will be the list of each thing i'd used"
+// "Here will be the list of each thing i'd used, you can install using:  npm i"
 ...
 npm install tailwindcss @tailwindcss/vite
 npm i react-router
 yarn add -D sass-embedded
+npm i firebase
+npm i react-slick slick-carousel --save
 ...
 ```

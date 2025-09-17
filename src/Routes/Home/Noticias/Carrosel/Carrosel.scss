@@ -20,9 +20,13 @@
 }
 .slick-dots {
   bottom: 0px !important;
-  & li button:before {
-    width: 1rem !important;
-    height: 1rem !important;
+  & li {  overflow-y: hidden !important;  }
+  & li button {  overflow-y: hidden !important;  }
+  & li button:before, & li button {
+    width: 2rem !important;
+    height: 2rem !important;
+    font-size: 10px;
+    overflow-y: hidden !important;
   }
   & li.active button {  color: #FAFAFB !important;  }
 }

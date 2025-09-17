@@ -7,16 +7,17 @@
     flex-direction: column;
     
     &_Tittle {
-        font-size: 2.25rem;
+        font-size: 3.25rem;
         font-weight: bold;
         text-align: center;
+        height: 25%;
     }
     &_List {
         height: 75%;
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
 
 
         &__Ramo {
@@ -56,8 +57,34 @@
 
                 &--Text  {
                   font-weight: bold;
+                  font-size: 1.75rem;
                 }
             }
         }
     }
+}
+
+
+
+@media screen and (  max-width: 1280px  ) {
+  .Ramos {
+    &_Tittle {  font-size: 2.5rem;  }
+    &_List__Ramo-Section--Text {  font-size: 1.25rem;  }
+  }
+}
+
+
+
+@media screen and (  max-width: 1024px  ) {
+  .Ramos {
+    &_List {
+      flex-wrap: wrap;
+
+      &__Ramo {
+
+        width: 40%;
+        height: 40%;
+      }
+    }
+  }
 }

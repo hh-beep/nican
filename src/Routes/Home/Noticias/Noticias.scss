@@ -15,16 +15,26 @@
         justify-content: space-between;
 
         &__Tittle {
-            font-size: 2.25rem;
+            font-size: 3.25rem;
             font-weight: bold;
         }
         &__Button {
             border: 0.25rem solid #2AA6A2;
-            padding: 1rem;
+            padding: 0.25rem 1rem;
             color: #2AA6A2;
-            font-size: 1.125rem;
+            font-size: 1.75rem;
             border-radius: 0.5rem;
             font-weight: bold;
         }
     }
+}
+
+
+
+
+@media screen and (  max-width: 1280px  ) {
+  .Noticias {
+    &_Section__Tittle {  font-size: 2.25rem;  }
+    &_Section__Button {  font-size: 1.25rem;  }
+  }
 }

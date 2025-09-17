@@ -1,11 +1,18 @@
+/*  -- Fonte Normal --  */
 @font-face {
   font-family: Novarse-Book;
   src: url("./Novarese-Book.ttf");
 }
+/*  -- Fonte Bold --  */
+@font-face {
+  font-family: 'ITC Novarese Std';
+  src: url("./itc-novarese-std-bold.otf");
+}
+
+
 
 
 :root {
-  font-family: Helvetica, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -22,7 +29,7 @@
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-
+  font-family: Novarse-Book, 'ITC Novarese Std', Helvetica, system-ui;
   transition: 300ms all;
 }
 main>section, body {
@@ -31,3 +38,4 @@ main>section, body {
 a {
   text-decoration: none;
 }
+h1, h2, h3, h4, h5 {  font-family: 'ITC Novarese Std', Novarse-Book;  }

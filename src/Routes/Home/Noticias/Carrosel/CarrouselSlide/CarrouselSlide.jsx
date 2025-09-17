@@ -22,7 +22,7 @@ const CarrouselSlide = ({  slideInfos  }) => {
 
             <section className="CarrouselSlide_Section">
                 <p className="CarrouselSlide_Section__Data">{  data  }</p>
-                <h3 className="CarrouselSlide_Section__Titulo">{  titulo  }</h3>
+                <p className="CarrouselSlide_Section__Titulo">{  titulo  }</p>
             </section>
         </Link>
     )

@@ -1,23 +1,23 @@
 .FooterItem {
   width: 30%;
-  height: 100%;
+  height: 80%;
   display :flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
   
   &_Titulo {
-    height: 20%;
+    height: 30%;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 1.75rem;
+    font-size: 2.25rem;
     color: #f2f2f2;
     font-weight: bold;
   }
   &_Lista {
-    height: 80%;
+    height: 60%;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -44,5 +44,15 @@
       }
       &-Texto.FooterLinkTexto {  font-weight: normal;  }
     }
+  }
+}
+
+
+
+
+@media screen and (  max-width: 1280px  ) {
+  .FooterItem {
+    &_Titulo {  font-size: 2rem;  }
+    &_Lista__Item-Texto {  font-size: 1rem;  }
   }
 }

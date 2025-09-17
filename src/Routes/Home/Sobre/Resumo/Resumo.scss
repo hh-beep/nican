@@ -7,10 +7,20 @@
     flex-direction: column;
 
     &_Tittle {
-        font-size: 2.25rem;
+        font-size: 3.25rem;
         font-weight: bold;
     }
     &_Text {
         text-align: center;
+        font-size: 1.75rem;
     }
+}
+
+
+
+@media screen and (  max-width: 1280px  ) {
+  .Resumo {
+    &_Tittle  {  font-size: 2.5rem;  }
+    &_Text    {  font-size: 1.5rem;  }
+  }
 }

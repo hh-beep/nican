@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: space-evenly;
     background-size: cover;
+    background-position: center;
     flex-direction: column;
 
     * {  background: none;  }
@@ -24,12 +25,45 @@
 
 
         &__Tittle {
-            font-size: 4rem;
+            font-size: 5.25rem;
             font-weight: bold;
         }
         &__Parag {
-            font-size: 1.5rem;
+            font-size: 2.25rem;
             font-weight: lighter;
         }
     }
+}
+
+
+
+/*  Responsividade dos itens do compoente Start  */
+@media screen and (  max-width: 1280px  ) {
+  .Start {
+    &_Block {
+      height: 12.5%;
+    }
+    &_Texts {
+      &__Tittle {
+        font-size: 4.5rem;
+      }
+      &__Parag  {
+        font-size: 1.75rem;
+      }
+    }
+  }
+}
+
+
+@media screen and (  max-width: 1024px  ) {
+  .Start {
+    &_Block {  height: 0%;  }
+    &_Texts {
+      justify-content: center;
+
+
+      &__Tittle, &__Parag {  color: #e0e0e0;  }
+      
+    }
+  }
 }

@@ -3,6 +3,7 @@
   height: 100vh;
   background-image: url("../../../Assets/Home_ConhecaBg.png"); 
   background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -25,14 +26,14 @@
 
 
     &__Titulo {
-      font-size: 2.5rem;
+      font-size: 3.25rem;
       color :#f2f2f2;
       font-weight: bold;
     }
     &__Texto {
       font-weight: bold;
       color: #f2f2f2;
-      font-size: 1.75rem;
+      font-size: 2.25rem;
       width: 60%;
       text-align: center;
 
@@ -40,6 +41,18 @@
         color: #2AA6A2;
         font-weight: bold;
       }
+    }
+  }
+}
+
+
+
+
+@media screen and (  max-width: 1280px  ) {
+  .Conheca {
+    &_Glass {
+      &__Titulo {  font-size: 2.25rem;  }
+      &__Texto  {  font-size: 1.75rem;  }
     }
   }
 }

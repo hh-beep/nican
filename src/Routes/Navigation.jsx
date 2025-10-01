@@ -9,6 +9,9 @@ import LogoBlack from "../Assets/Logo_Black.svg"
 
 const Navigation = () => {
 
+  const [color, hasColor] = useState(false);
+
+
     const thisRoute = useLocation().pathname;
     const paths = [
         {  name: "Início", path: "/"  },
@@ -17,8 +20,13 @@ const Navigation = () => {
     ]
 
 
+    function changeColor() {
+      hasColor(!color) 
+    }
+
+
     return (
-        <nav className={"NavBar "}>
+        <nav className={"NavBar"}>
 
             {/*  On Laptop-Pc  */}
             <section className="Laptop">
@@ -51,7 +59,17 @@ const Navigation = () => {
             </section>
 
 
-            
+
+          <section onClick={  () => {  changeColor()  }} className={"Phone " + (color ? "" : "leColor")}>        
+                <section className="Phone_Name">
+                    <img className="Phone_Name__Image" src={  LogoBlack  }/>
+                    <h1 className="Phone_Name__Tittle">Nican Mopohua</h1>
+                </section>
+
+                <ul>
+                </ul>
+          </section>
+
 
 
         </nav>

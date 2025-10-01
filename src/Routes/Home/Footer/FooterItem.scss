@@ -14,6 +14,7 @@
     align-items: center;
     font-size: 2.25rem;
     color: #f2f2f2;
+    text-align: center;
     font-weight: bold;
   }
   &_Lista {
@@ -41,6 +42,7 @@
         font-size: 1.25rem;
         color :#f2f2f2;
         font-weight: bold;
+        text-align: center;
       }
       &-Texto.FooterLinkTexto {  font-weight: normal;  }
     }
@@ -55,4 +57,9 @@
     &_Titulo {  font-size: 2rem;  }
     &_Lista__Item-Texto {  font-size: 1rem;  }
   }
+}
+
+
+@media screen and (  max-width: 1024px  ) {
+  .FooterItem {}
 }

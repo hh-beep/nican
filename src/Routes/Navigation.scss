@@ -1,9 +1,11 @@
+.leColor {  background-color: #F0F;;}
+
+
 .NavBar {
     //position: -webkit-sticky;
     position: fixed;
     z-index: 3;
     top: -1px;
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -13,13 +15,37 @@
     backdrop-filter: blur(3px);
     border-bottom: 2px solid #2c2c2c;
      
+    width: 100vw;
+    height: 12.5vh;
 
-     height: 12.5vh;
+     .Phone {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
 
+
+        &_Name {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 100%;
+          width: 80%;
+
+          &__Image {
+            height: 80%;
+          }
+          &__Tittle {
+            font-size: 2.5rem;
+          }
+        }
+     }
 
 
      .Laptop { 
-        display: flex;
+        display: none;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
@@ -88,11 +114,40 @@
 }
 
 
-
-@media screen and (  max-width: 1280px  ) {
+@media screen and (  min-width: 468px  ) and (  max-width: 1024px  ) {
   .NavBar {
-    height: 17.5vh;
+    height: 15vh;
 
-    .Laptop {}
   }
 }
+
+
+@media screen and (  min-width: 769px  ) {
+  .NavBar {
+    .Phone {  display: none;  }
+    .Laptop {  display: flex;  }
+  }
+}
+
+
+@media screen and (  min-width: 480px  ) and (  max-width: 768px  ) {
+  .NavBar {
+    height: 17.5vh; 
+  }
+}
+
+
+
+@media screen and (  min-width: 0px  ) and (  max-width: 480px  ) {
+  .NavBar {
+    height: 20vh;    
+   
+
+    .Phone {
+      display: flex;
+    }
+    .Laptop {  display: none;  }
+  }
+}
+
+

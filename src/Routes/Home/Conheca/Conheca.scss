@@ -29,6 +29,7 @@
       font-size: 3.25rem;
       color :#f2f2f2;
       font-weight: bold;
+      text-align: center;
     }
     &__Texto {
       font-weight: bold;
@@ -54,5 +55,13 @@
       &__Titulo {  font-size: 2.25rem;  }
       &__Texto  {  font-size: 1.75rem;  }
     }
+  }
+}
+
+
+
+@media screen and (  max-width: 1024px  ) {
+  .Conheca {
+    &_Glass {  width: 75%;  }  
   }
 }

@@ -27,10 +27,12 @@
         &__Tittle {
             font-size: 5.25rem;
             font-weight: bold;
+            text-align: center;
         }
         &__Parag {
             font-size: 2.25rem;
             font-weight: lighter;
+            text-align: center;
         }
     }
 }
@@ -66,4 +68,21 @@
       
     }
   }
+}
+
+
+@media screen and (  max-width: 768px  ) {
+  .Start {
+    &_Block {
+      height: 0;
+    }
+    &_Texts {
+      height: 100%;
+    }
+  }
+}
+
+
+@media screen and (max-width: 480px  ) {
+
 }

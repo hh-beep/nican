@@ -2,6 +2,9 @@
 import insta from "../../../../Assets/instagram.svg";
 import faceb from "../../../../Assets/facebook.svg";
 
+//  -- Link --  //
+import {  Link  } from "react-router";
+
 import "../FooterItem.scss";
 
 
@@ -23,10 +26,10 @@ const Redes = () => {
         {
           redesSociais.map(  rede => {
             return (
-              <section className="FooterItem_Lista__Item">
+              <Link className="FooterItem_Lista__Item">
                 <img className="FooterItem_Lista__Item-Imagem" src={  rede.img  }/>
                 <p className="FooterItem_Lista__Item-Texto">{  rede.name  }</p>
-              </section>
+              </Link>
             )  
           })
         }

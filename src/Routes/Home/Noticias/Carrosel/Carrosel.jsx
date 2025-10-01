@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Carrosel.scss";
 
 //  -- Components --  //
-
 import { 
     useState, 
     useEffect 
@@ -19,29 +18,44 @@ import CarrouselSlide from "./CarrouselSlide/CarrouselSlide";
 
 
 const Carrosel = ({  noticiasInfos  }) => {
-
-
+  
     const slides = Object.values(  noticiasInfos  ).slice(-4);
 
-    console.log(slides, noticiasInfos)
+    const carrouselSettings = {
+      slidesToShow: 1,
+      speed: 500,
+      dots: true,
+      infinite: true,
+      initialSlide: 0,
+      slidesToScroll: 1,
+      responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+            }
+          },
+          {
+            breakpoint: 8192,
+            settings: {  slidesToShow: 2}
+          }
+      ] 
+    }
+
 
 
     return (
         <Slider
-            slidesToShow={2}
-            speed={500}
-            dots={true}
-            infinite={true}
-            slidesToScroll={1}
-            nextArrow={  <FiArrowRight />  }
-            prevArrow={  <FiArrowLeft  />  }
-            className="Carrosel"
+          className="Carrosel"
+          nextArrow={  <FiArrowRight />  }
+          prevArrow={  <FiArrowLeft  />  }
+          {...carrouselSettings}
         >
             {
                 slides.map(  (slideInfos, key) => {
                     return (
                         <section className="Carrosel_Slide" key={key}>
-                            <CarrouselSlide slideInfos={  slideInfos  }/>
+                            <CarrouselSlide key={  key  } slideInfos={  slideInfos  }/>
                         </section>
                     )
                 })

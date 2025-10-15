@@ -2,11 +2,10 @@ import "./Start.scss";
 
 
 
+
 const Start = () => {
-    return (
+  return (
         <section className="Start">
-
-
             <div className="Start_Block"></div>
 
             <section className="Start_Texts">
@@ -15,8 +14,6 @@ const Start = () => {
                     Descubra a aventura e viva a fraternidade.
                 </p>
             </section>
-
-
         </section>
     )
 }

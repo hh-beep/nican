@@ -1,5 +1,5 @@
 .Ramos {
-    height: 50%;
+    height: 70%;
     width: 80%;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-evenly;
 
 
         &__Ramo {
@@ -38,10 +38,16 @@
                 display: flex;
                 align-items: center;
                 justify-content: space-around;
-
+                flex-direction: column;
+                  
                 &--Img {
-                    height: 90%;
+                    height: 70%;
                 } 
+                &--Age {
+                  font-size: 1.325rem;
+                  color: #f2f2f2;
+                  height: 20%;
+                }
             }
             &-Figure#Lobinho    {  background-color: #F1C40F;  }
             &-Figure#Escoteiro  {  background-color: #2AA6A2;  }
@@ -61,6 +67,9 @@
                   font-size: 1.75rem;
                 }
             }
+          &:hover {
+            transform: scale(1.1)
+          }
         }
     }
 }

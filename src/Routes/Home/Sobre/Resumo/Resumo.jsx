@@ -8,10 +8,7 @@ const Resumo = () => {
         <section className="Resumo">
             <h2 className="Resumo_Tittle">Quem somos?</h2>
             <p className="Resumo_Text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Dolore beatae totam unde quas nesciunt voluptates laborum quidem 
-                libero at facilis, cumque eligendi sit soluta, labore vero. 
-                Molestias rerum perspiciatis voluptate.
+              No nosso Grupo Escoteiro Nican Mopohua – 222/PR, unimos fé, amizade e aventura para transformar vidas. Mais que um grupo, somos uma família que cresce junta, serve à comunidade e vive o escotismo com alegria e propósito.
             </p>
         </section>
     )

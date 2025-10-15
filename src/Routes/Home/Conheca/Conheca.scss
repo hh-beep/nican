@@ -1,14 +1,15 @@
 .Conheca {
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   background-image: url("../../../Assets/Home_ConhecaBg.png"); 
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  flex-direction: column;
 
-
+  /*
   &_Glass {
     height: 60%;
     width: 60%;
@@ -43,12 +44,13 @@
         font-weight: bold;
       }
     }
-  }
+    
+  }*/
 }
 
 
 
-
+/*
 @media screen and (  max-width: 1280px  ) {
   .Conheca {
     &_Glass {
@@ -65,3 +67,4 @@
     &_Glass {  width: 75%;  }  
   }
 }
+*/

@@ -60,7 +60,7 @@ const Navigation = () => {
 
 
 
-          <section onClick={  () => {  changeColor()  }} className={"Phone " + (color ? "" : "leColor")}>        
+          <section onClick={  () => {  changeColor()  }} className={"Phone " + (color ? "leColor" : "")}>        
                 <section className="Phone_Name">
                     <img className="Phone_Name__Image" src={  LogoBlack  }/>
                     <h1 className="Phone_Name__Tittle">Nican Mopohua</h1>

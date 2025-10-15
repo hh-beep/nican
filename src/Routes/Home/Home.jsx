@@ -51,6 +51,7 @@ const Home = () => {
     }, [])
 
 
+
     return (
         <main>
             {/*  The NavBar Module import goes here :D */}

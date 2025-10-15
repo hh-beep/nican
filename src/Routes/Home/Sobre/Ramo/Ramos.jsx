@@ -17,10 +17,10 @@ import "./Ramos.scss";
 const Ramos = () => {
 
     const ramos = [
-        {  path: "/Ramos/", img: Lob, name: "Lobinho"  },
-        {  path: "/Ramos/", img: Esc, name: "Escoteiro"  },
-        {  path: "/Ramos/", img: Sen, name: "Senior"  },
-        {  path: "/Ramos/", img: Pio, name: "Pioneiro"  }
+        {  age: "7 aos 10", path: "/Ramos/", img: Lob, name: "Lobinho"  },
+        {  age: "11 aos 14", path: "/Ramos/", img: Esc, name: "Escoteiro"  },
+        {  age: "15 aos 17", path: "/Ramos/", img: Sen, name: "Senior"  },
+        {  age: "18 aos 22", path: "/Ramos/", img: Pio, name: "Pioneiro"  }
     ]
 
 
@@ -40,7 +40,8 @@ const Ramos = () => {
                                 key={  key  }
                             >
                                 <section className="Ramos_List__Ramo-Figure" id={  ramo.name  }>
-                                    <img className="Ramos_List__Ramo-Figure--Img" src={  ramo.img  }/>
+                                  <img className="Ramos_List__Ramo-Figure--Img" src={  ramo.img  }/>
+                                  <h1 className="Ramos_List__Ramo-Figure--Age">{  ramo.age  }</h1>
                                 </section>
 
                                 <section className="Ramos_List__Ramo-Section">

@@ -22,7 +22,7 @@ const Carrosel = ({  noticiasInfos  }) => {
     const slides = Object.values(  noticiasInfos  ).slice(-4);
 
     const carrouselSettings = {
-      slidesToShow: 1,
+      slidesToShow: 2,
       speed: 500,
       dots: true,
       infinite: true,
@@ -35,9 +35,9 @@ const Carrosel = ({  noticiasInfos  }) => {
               slidesToShow: 1,
             }
           },
-          {
-            breakpoint: 8192,
-            settings: {  slidesToShow: 2}
+          {                                   // Uhhh pelo visto n funciona sem isso :D
+            breakpoint: 8192,  
+            settings: {  slidesToShow: 2  }
           }
       ] 
     }

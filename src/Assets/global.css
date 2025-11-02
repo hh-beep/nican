@@ -35,7 +35,5 @@
 main>section, body {
     background-color: #E0E0E0;
 }
-a {
-  text-decoration: none;
-}
-h1, h2, h3, h4, h5 {  font-family: 'ITC Novarese Std', Novarse-Book;  }
+a {  text-decoration: none;  }
+h1, h2, h3, a {  font-family: 'ITC Novarese Std', Novarse-Book;  }

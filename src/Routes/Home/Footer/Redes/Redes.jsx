@@ -12,8 +12,8 @@ import "../FooterItem.scss";
 const Redes = () => {
   
   const redesSociais = [
-    {  name: "Instagram", img: insta  },
-    {  name: "Facebook ", img: faceb  },
+    {  name: "Instagram", img: insta, url: "https://www.instagram.com/gecnican222pr/"  },
+    {  name: "Facebook ", img: faceb, url: "https://www.facebook.com/GECNican"  },
   ]
 
 
@@ -26,10 +26,10 @@ const Redes = () => {
         {
           redesSociais.map(  rede => {
             return (
-              <Link className="FooterItem_Lista__Item">
+              <a target="_blank" className="FooterItem_Lista__Item" href={  rede.url  }>
                 <img className="FooterItem_Lista__Item-Imagem" src={  rede.img  }/>
                 <p className="FooterItem_Lista__Item-Texto">{  rede.name  }</p>
-              </Link>
+              </a>
             )  
           })
         }

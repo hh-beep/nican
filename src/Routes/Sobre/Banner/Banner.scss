@@ -1,0 +1,29 @@
+.Banner {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-image: url("../../../Assets/Sobre_Banner.png");
+  background-attachment: fixed;  
+  z-index: 1;
+  background-size: cover;
+  background-position: center;
+
+  &_Block {  height: 12.5%; width: 100%  }
+  &_Section {
+    height: 85%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &__Tittle {
+      width: 30%;
+      text-align: center;
+      font-size: 5.25rem;
+      color: #2c2c2c;
+    }
+  }
+}

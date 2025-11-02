@@ -1,5 +1,5 @@
 .Resumo {
-    height: 30%;
+    height: 40%;
     width: 80%;
     display: flex;
     align-items: center;
@@ -13,6 +13,14 @@
     &_Text {
         text-align: center;
         font-size: 1.75rem;
+    }
+    &_Link {
+      color: #2c2c2c;
+
+      &:hover {  
+        font-size: 1.85rem;
+        color: #2AA6A2; 
+      }
     }
 }
 

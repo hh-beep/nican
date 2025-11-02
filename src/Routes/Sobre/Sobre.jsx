@@ -1,7 +1,23 @@
+//  -- Components --  //
+import Navigation from "../Navigation.jsx"
+import Banner from "./Banner/Banner.jsx";
+import Inicio from "./Inicio/Inicio.jsx"
+
+
+
+
+
 const Sobre = () => {
-    return (
-        <h1>PAGINA Sobre</h1>
-    )
+  return (
+    <main>
+ 
+      <Navigation />
+
+      <Banner />
+      <Inicio />
+
+    </main>
+  )
 }
 
 export default Sobre;

@@ -34,7 +34,7 @@ const routesPaths = createHashRouter([
     element: <Home />
   },
   {
-    path: "/Sobre/",
+    path: "/Sobre",
     element: <Sobre />
   },
   {

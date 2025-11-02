@@ -14,9 +14,10 @@ const Navigation = () => {
 
     const thisRoute = useLocation().pathname;
     const paths = [
-        {  name: "Início", path: "/"  },
-        {  name: "Sobre", path: "/Sobre/"  },
-        {  name: "Ramos", path: "/Ramos/"  }
+      {  name: "Início",  path: "/"  },
+      {  name: "Sobre",   path: "/Sobre/"  },
+      {  name: "Ramos",   path: "/Ramos/"  },
+      {  name: "Contato", path: "/Contato/"}
     ]
 
 
@@ -40,7 +41,6 @@ const Navigation = () => {
                 <ul className="Laptop_Navigations">
                     {
                         paths.map(  (path, key) => {
-                            console.log()
                             return (
                                 <Link 
                                     className={"Laptop_Navigations__Link " + (thisRoute == path.path ? "current" : "")} 
@@ -59,7 +59,7 @@ const Navigation = () => {
             </section>
 
 
-
+          {/*  Phone Screenws Stuff  */}
           <section onClick={  () => {  changeColor()  }} className={"Phone " + (color ? "leColor" : "")}>        
                 <section className="Phone_Name">
                     <img className="Phone_Name__Image" src={  LogoBlack  }/>

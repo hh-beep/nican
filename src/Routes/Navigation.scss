@@ -11,8 +11,8 @@
     justify-content: space-around;
 
     //  -- Tying a sort of glassmorphism stuff
-    background-color: #E0E0E040;
-    backdrop-filter: blur(3px);
+    background-color: #E0E0E060;
+    backdrop-filter: blur(5px);
     border-bottom: 2px solid #2c2c2c;
      
     width: 100vw;
@@ -75,7 +75,7 @@
             justify-content: space-around;
             align-items: center;
             height: 100%;
-            width: 40%;
+            width: 50%;
 
 
             &__Link {

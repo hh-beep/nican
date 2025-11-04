@@ -1,0 +1,77 @@
+.Historia {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+
+  &_Top {
+    height: 25%;
+    width: 80%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+     
+    &__Tittle {
+      font-weight: bold; 
+      font-size: 3.25rem;
+      color: #2c2c2c;      
+    }
+    &__Icon {
+      height: 6rem;
+      width: 6rem;
+    }
+  }
+ 
+
+
+
+  &_Section {
+    width: 80%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+
+    &__TextArea {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      &-Text {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 3.25rem;
+        color: #2c2c2c;
+      }
+    }
+  
+
+    &__Figure {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    
+      &-Image {
+        width: 80%;
+        height: auto;
+        border-radius: 1rem;
+        
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+          box-shadow: 5px 5px 1rem #2c2c2c 
+        }
+      }
+    }
+  }
+}

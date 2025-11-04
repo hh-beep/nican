@@ -12,12 +12,12 @@ import {
 } from 'firebase/database';
 
 //  -- Components --  //
-import Navigation from "../Navigation";
+import Navigation from "../Navigation/Navigation";
 import Start from "./Start/Start";
 import Sobre from "./Sobre/Sobre";
 import Noticias from "./Noticias/Noticias";
 import Conheca from "./Conheca/Conheca";
-import Footer from "./Footer/Footer";
+import Footer from "../Footer/Footer";
 
 
 
@@ -61,8 +61,8 @@ const Home = () => {
             <Sobre /> 
             <Noticias noticiasInfos={  db !== undefined ? db.Noticias : {}  }/>
             <Conheca />  
-            <Footer />
 
+            <Footer />
 
         </main>
     )

@@ -1,0 +1,153 @@
+.leColor {  background-color: #F0F;  }
+
+
+.NavBar {
+    //position: -webkit-sticky;
+    position: fixed;
+    z-index: 3;
+    top: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    //  -- Tying a sort of glassmorphism stuff
+    background-color: #E0E0E060;
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid #2c2c2c;
+     
+    width: 100vw;
+    height: 12.5vh;
+
+     .Phone {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;
+        width: 100%;
+
+
+        &_Name {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          height: 100%;
+          width: 80%;
+
+          &__Image {
+            height: 80%;
+          }
+          &__Tittle {
+            font-size: 2.5rem;
+          }
+        }
+     }
+
+
+     .Laptop { 
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        width: 80%;
+
+
+        &_Name {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 35%;
+            height: 100%;
+
+            &__Image {
+                height: 80%;
+            }
+            &__Tittle {
+                font-size: 2.25rem;
+                font-weight: bold;
+            }
+        }
+
+
+        &_Navigations {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 50%;
+
+
+            &__Link {
+                border-bottom: 3px solid #2c2c2c;
+
+                
+                &-Text {
+                    color: #2c2c2c;
+                    font-size: 1.25rem;
+                }
+                &:hover {
+                    transform: scale(1.125);
+                    border-color: #E0E0E0;
+                }
+            }
+            &__Link.current {
+                border-bottom: 5px solid #E0E0E0;
+                transform: scale(1.125);
+                cursor: default;
+                &:hover {  transform: scale(1.125); }
+            }
+        }
+     }
+}
+
+
+
+
+
+@media screen and (  max-width: 1280px  ) {
+  .NavBar {
+    .Laptop {
+      &_Name__Tittle {  font-size: 1.75rem;  }
+    }
+  }
+}
+
+
+@media screen and (  min-width: 468px  ) and (  max-width: 1024px  ) {
+  .NavBar {
+    height: 15vh;
+
+  }
+}
+
+
+@media screen and (  min-width: 769px  ) {
+  .NavBar {
+    .Phone {  display: none;  }
+    .Laptop {  display: flex;  }
+  }
+}
+
+
+@media screen and (  min-width: 480px  ) and (  max-width: 768px  ) {
+  .NavBar {
+    height: 17.5vh; 
+  }
+}
+
+
+
+@media screen and (  min-width: 0px  ) and (  max-width: 480px  ) {
+  .NavBar {
+    height: 20vh;    
+   
+
+    .Phone {
+      display: flex;
+    }
+    .Laptop {  display: none;  }
+  }
+}
+
+

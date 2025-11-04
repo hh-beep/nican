@@ -17,7 +17,7 @@ import "./Ramos.scss";
 const Ramos = () => {
 
     const ramos = [
-        {  age: "7 aos 10", path: "/Ramos/", img: Lob, name: "Lobinho"  },
+        {  age: "7 aos 10", path: "/Ramos/#RamoLobinho", img: Lob, name: "Lobinho"  },
         {  age: "11 aos 14", path: "/Ramos/", img: Esc, name: "Escoteiro"  },
         {  age: "15 aos 17", path: "/Ramos/", img: Sen, name: "Senior"  },
         {  age: "18 aos 22", path: "/Ramos/", img: Pio, name: "Pioneiro"  }

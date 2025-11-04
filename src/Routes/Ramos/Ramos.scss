@@ -1,0 +1,84 @@
+#RamoLobinho    {  background-color: #F1C40F;  }
+#RamoEscoteiro  {  background-color: #2AA6A2;  }
+#RamoSenior     {  background-color: #7B3FA1;  }
+#RamoPioneiros  {  background-color: #D6301A;  }
+#RamoChefia     {  background-color: #4B6B47;  }
+#RamoCanto      {  background-color: #7F3A4C;  }
+
+
+
+.Ramo.white p, .Ramo.white h2, .Ramo.white svg > * {
+  color: #f2f2f2;
+}
+
+
+.Ramo {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1rem solid #f2f2f2;
+
+  &_Top {
+    height: 20%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__Tittle {
+      color: #2c2c2c;
+      font-size: 3.25rem;
+      font-weight: bold;
+    }
+    &__Icon {
+      height: 6rem;
+      width: 6rem;
+    }
+  }
+  &_Main {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__Figure {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    
+      &-Image {
+        width: 80%;
+        height: auto;
+        border-radius: 2rem;
+        border: 0.5rem solid #f2f2f2;
+
+        &:hover {
+          transform: scale(1.05);
+          cursor: pointer;
+          box-shadow: 0.25rem 0.25rem 1rem #e0e0e0;
+        }
+      }
+    }
+    &__TextArea {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+      & > p {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+
+}

@@ -17,6 +17,7 @@ import {
 //  -- Components --  //
 import Home from './Routes/Home/Home';
 import Sobre from './Routes/Sobre/Sobre';
+import Ramos from "./Routes/Ramos/Ramos";
 import Error from './Routes/Error/Error';
 
 
@@ -36,6 +37,10 @@ const routesPaths = createHashRouter([
   {
     path: "/Sobre",
     element: <Sobre />
+  },
+  {
+    path: "/Ramos",
+    element: <Ramos />
   },
   {
     path: "*",

@@ -1,0 +1,65 @@
+.FooterItem {
+  width: 30%;
+  height: 80%;
+  display :flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  
+  &_Titulo {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2.25rem;
+    color: #f2f2f2;
+    text-align: center;
+    font-weight: bold;
+  }
+  &_Lista {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction :column; 
+    
+
+    &__Item {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+    
+
+      &-Imagem {
+        height: 40%;
+      }
+      &-Texto {
+        font-size: 1.25rem;
+        color :#f2f2f2;
+        font-weight: bold;
+        text-align: center;
+      }
+      &-Texto.FooterLinkTexto {  font-weight: normal;  }
+    }
+  }
+}
+
+
+
+
+@media screen and (  max-width: 1280px  ) {
+  .FooterItem {
+    &_Titulo {  font-size: 2rem;  }
+    &_Lista__Item-Texto {  font-size: 1rem;  }
+  }
+}
+
+
+@media screen and (  max-width: 1024px  ) {
+  .FooterItem {}
+}

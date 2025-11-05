@@ -3,15 +3,20 @@ import { getAnalytics } from "firebase/analytics";
 import { getDatabase } from "firebase/database";
 
 
+//  -- Informations do firebase criado no .env do projeto (nao aparece no github) --  //
+const env = import.meta.env;
+
+
+
 const sdk = {
-  apiKey: "AIzaSyAfsdT-DzgM2SNeNSeEDyJ9r863VyllVxQ",
-  authDomain: "nican-810e4.firebaseapp.com",
-  databaseURL: "https://nican-810e4-default-rtdb.firebaseio.com",
-  projectId: "nican-810e4",
-  storageBucket: "nican-810e4.appspot.com",
-  messagingSenderId: "44932467054",
-  appId: "1:44932467054:web:8a5a29981d3d6a6648197f",
-  measurementId: "G-9NMZ0VFJQV"
+  apiKey:             env.VITE_FIREBASE_API_KEY,
+  authDomain:         env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL:        env.VITE_FIREBASE_DATABASE_URL,
+  projectId:          env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket:      env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId:  env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId:              env.VITE_FIREBASE_APP_ID,
+  measurementId:      env.VITE_FIREBASE_MEASUREMENT_ID 
 };
 
 

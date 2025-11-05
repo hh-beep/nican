@@ -1,0 +1,14 @@
+ .Banner#Contato {
+  background-image: url("../../../Assets/Contato_Banner.png"); 
+ 
+  .Banner_Section {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__Tittle {
+      width: 50%;
+      color: #2c2c2c;
+    }
+  }
+} 

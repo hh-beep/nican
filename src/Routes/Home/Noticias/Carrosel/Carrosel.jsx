@@ -8,17 +8,14 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Carrosel.scss";
 
 //  -- Components --  //
-import { 
-    useState, 
-    useEffect 
-} from "react";
 import CarrouselSlide from "./CarrouselSlide/CarrouselSlide";
 
 
 
 
 const Carrosel = ({  noticiasInfos  }) => {
-  
+
+    //  -- Pegando somente os ultimos 4 itens do array Noticias --  //
     const slides = Object.values(  noticiasInfos  ).slice(-4);
 
     const carrouselSettings = {

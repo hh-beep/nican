@@ -9,6 +9,7 @@ const Mais = () => {
       <section className="Mais_Main">
         <p className="Mais_Main__Text">
           Além dos jovens, há corações generosos que servem em silêncio — nossos voluntários.
+          <br/>
           São eles que, com dedicação e fé, fazem com que cada aventura, descoberta e momento de crescimento aconteça para os nossos jovens.
         </p>      
       </section>

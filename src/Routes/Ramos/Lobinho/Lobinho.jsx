@@ -20,9 +20,8 @@ const Lobinho = () => {
       
         <section className="Ramo_Main__TextArea">
           <p clasName="Ramo_Main__TextArea-Text">
-            Entre os 6,5 e os 10 anos, somos lobinhos. Aprendemos muito sobre a vida em meio à natureza, a viver em grupo e desenvolvemos nossa liderança. “O livro da Jângal”, que retrata as aventuras de Mowgli, o menino lobo, é o que inspira a organização do Ramo Lobinho – juntos, formamos uma alcateia, que é dividida em pequenos grupos chamados matilhas.
-            Cada matilha tem de quatro a seis lobinhos, entre meninos e meninas, e esse grupo nos acompanha durante todo o período em que ficamos nesse Ramo.
-            Com esses amigos, fazemos jogos, brincadeiras, vivemos aventuras, aprendemos sobre a importância da boa ação diária e ainda somos incentivados a fazer sempre o nosso Melhor Possível; esse inclusive é o nosso lema.
+            O Ramo Lobinho é formado por crianças de 6 e meio a 10 anos que aprendem a viver em grupo e a cuidar da natureza. Inspirados pelo “Livro da Jângal”, que conta as aventuras de Mowgli, formamos a alcateia, dividida em pequenas matilhas com quatro a seis lobinhos. Juntos, brincamos, exploramos, fazemos amigos e descobrimos o valor da boa ação diária. 
+            A cada atividade, buscamos crescer e aprender, vivendo o nosso lema com alegria: fazer sempre o Melhor Possível.
           </p>
         </section>
       </section>

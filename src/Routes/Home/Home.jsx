@@ -24,20 +24,18 @@ import Footer from "../Footer/Footer";
 const Home = () => {
 
     //  -- Variavel do tipo state (variavel de react) --  //
-    const [db, setDb] = useState({
-        Noticias: {},
-    })
+    const [db, setDb] = useState({})
 
     //  --  UseEffects -> Vai carregar este codigo quando a pagina carregar --  //
     useEffect(  () => {
         /*
          *  A variavel ref recebe o banco de dados (com o getDatabase()), e dps
          *  efine como ponto de refecencia desse banco de dados o texto na
-         *  string, ou seja, vai referenciar todos os valores no caminho "/"
+         *  string, ou seja, vai referenciar todos os valores no caminho "/Noticias"
          *  do firebase
          * 
          */
-        const dbRef = ref(  getDatabase(), "/"  );
+        const dbRef = ref(  getDatabase(), "/Noticias"  );
         /*
          *
          *  Agora, o onvalue abaixo vai Ler todos os valores de dentro do
@@ -52,6 +50,7 @@ const Home = () => {
 
 
 
+
     return (
         <main>
             {/*  The NavBar Module import goes here :D */}
@@ -59,7 +58,7 @@ const Home = () => {
 
             <Start />
             <Sobre /> 
-            <Noticias noticiasInfos={  db !== undefined ? db.Noticias : {}  }/>
+            <Noticias noticiasInfos={  db !== undefined ? db : {}  }/> 
             <Conheca />  
 
             <Footer />

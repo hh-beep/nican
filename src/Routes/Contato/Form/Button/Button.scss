@@ -1,0 +1,26 @@
+.FormBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 10%;
+  width: 100%;
+
+  &_Button {
+      height: 80%;
+      width: 30%;
+      background-color: transparent;
+      border: 0.5rem solid #f2f2f2;
+      border-radius: 1rem;
+      color: #f2f2f2;
+      font-size: 1.75rem;
+      font-family: 'ITC Novarese Std', Novarse-Book;
+      
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0.25rem 0.25rem 0.5rem #e0e0e0;
+        background-color: #f2f2f2;
+        color: #2c2c2c;
+        cursor: pointer;
+      }
+    }
+}

@@ -17,8 +17,9 @@ const Navigation = () => {
       {  name: "Início",  path: "/"  },
       {  name: "Sobre",   path: "/Sobre/"  },
       {  name: "Ramos",   path: "/Ramos/"  },
-      {  name: "Contato", path: "/Contato/"}
-    ]
+      //{  name: "Noticias", path: "/Noticias/"  },
+      {  name: "Contato", path: "/Contato/"  }
+  ]
 
 
     function changeColor() {

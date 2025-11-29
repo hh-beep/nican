@@ -1,0 +1,47 @@
+.FormInputs {
+  height: 65%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  &_Area {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 18%;
+    width: 100%;
+    padding: 0 1rem;
+
+    &__Input {
+      height: 40%;
+      width: 80%;
+      padding: 0.25rem 1rem;
+      background-color: transparent;
+      border-radius: 1rem;
+      border: 0.25rem solid #f2f2f2; 
+      color: #f2f2f2;
+      font-size: 1.625rem;
+    }
+    &__Text {
+      text-align: center;
+      color: #f2f2f2;
+      font-size: 2rem;
+      width: 80%;
+    }
+
+    &:hover {
+      .FormInputs_Area__Input {
+        transform: scale(1.05);
+        box-shadow: 0.125rem 0.125rem 0.5rem #f2f2f2;
+      }
+    }
+  }
+  #FormInput_TextArea {
+    height: 40%;
+  }
+
+
+}

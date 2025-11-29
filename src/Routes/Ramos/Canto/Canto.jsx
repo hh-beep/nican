@@ -16,10 +16,8 @@ const Canto = () => {
       <section className="Ramo_Main">
         <section className="Ramo_Main__TextArea">
           <p clasName="Ramo_Main__TextArea-Text">
-          Dentro do Grupo Escoteiro Católico Nican Mopohua – 222/PR, a música também é parte viva da nossa espiritualidade.
-          Contamos com uma Equipe de Canto e uma Equipe Liturgica formada por jovens e adultos do próprio grupo, que anima as missas, celebrações e momentos de oração com entusiasmo, fé e dedicação.
-          A música é, pra nós, uma forma de servir com alegria e expressar a presença de Deus nas nossas atividades.
-          Seja durante uma celebração comunitária, uma fogueira no acampamento ou um evento do grupo, o canto se torna oração e partilha, unindo corações e fortalecendo a fraternidade escoteira.
+            A música é parte viva da espiritualidade do nosso grupo. A Equipe de Canto e a Equipe Litúrgica, formadas por jovens e adultos, animam missas, celebrações e momentos de oração com entusiasmo e fé. Cantar é nossa forma de servir com alegria e sentir a presença de Deus nas atividades. 
+            Seja em uma missa, ao redor da fogueira ou em um evento, o canto se transforma em oração e partilha, unindo corações e fortalecendo nossa fraternidade escoteira.
           </p>
         </section>
      

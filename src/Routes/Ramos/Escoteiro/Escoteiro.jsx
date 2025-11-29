@@ -16,9 +16,8 @@ const Escoteiro = () => {
       <section className="Ramo_Main">
         <section className="Ramo_Main__TextArea">
           <p clasName="Ramo_Main__TextArea-Text">
-            Entre os 11 e 14 anos, fazemos parte do Ramo Escoteiro – somos patrulhas de 5 a 8 jovens, de meninos e meninas, que juntas formam uma tropa. Aqui, além de trabalhar em equipe e entender a importância de respeitar a natureza, aprendemos diversas coisas que nos deixam mais confiantes e decididos.
-            Cada patrulha tem seu próprio bastão e bandeirola, onde gravamos lembranças marcantes de nossa experiência juntos, assim como o livro de patrulha, que tem todas as informações sobre os membros e fotografias das nossas ações. Elegemos um monitor, que age como um líder dentro de nosso grupo, e desenvolvemos algumas atividades por conta própria, como ir ao cinema, jogar algum jogo, etc.
-            Atividades como acampamentos e excursões fazem parte da nossa vivência no Ramo Escoteiro, sempre com o acompanhamento de adultos. Com nosso lema “Sempre Alerta”, estamos interessados em descobrir coisas novas e estar cercados de amigos.
+            O Ramo Escoteiro é formado por jovens de 11 a 14 anos que vivem grandes aventuras em grupo. Divididos em patrulhas de 5 a 8 integrantes, aprendemos a trabalhar em equipe, respeitar a natureza e confiar em nós mesmos. Cada patrulha tem seu bastão, bandeirola e livro, onde guardamos lembranças e histórias das nossas atividades. 
+            Com o lema “Sempre Alerta”, participamos de acampamentos, trilhas, passeios e muitas descobertas, sempre cercados de amigos e guiados por adultos que nos inspiram a crescer.
           </p>
         </section>
 

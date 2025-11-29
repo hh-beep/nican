@@ -20,10 +20,8 @@ const Chefia = () => {
       
         <section className="Ramo_Main__TextArea">
           <p clasName="Ramo_Main__TextArea-Text">
-            O Grupo Escoteiro Católico Nican Mopohua – 222/PR é conduzido por uma equipe de voluntários comprometidos com a educação, a fé e o serviço.
-            Nossa diretoria é formada por adultos escotistas e pais que dedicam seu tempo e talento para garantir que o grupo funcione com responsabilidade, segurança e alegria.
-            A diretoria é responsável por toda a gestão administrativa, pedagógica e espiritual do grupo, apoiando os ramos (Lobinhos, Escoteiros, Seniores e Pioneiros) e promovendo formações, eventos e atividades comunitárias.
-            Mais do que coordenadores, são pessoas que acreditam no poder do escotismo como ferramenta de transformação e que trabalham em unidade para manter viva a missão do Nican Mopohua.
+            O nosso grupo é guiado por Chefes voluntários que acreditam na força da educação, da fé e do serviço. Nossa diretoria é formada por escotistas e pais dedicados, que oferecem seu tempo e talento para garantir um grupo seguro, alegre e bem organizado. Eles cuidam da parte administrativa, financeira e estrutural do grupo, apoiando todos os ramos e promovendo formações, eventos e ações comunitárias.
+            Mais do que diretores, são pessoas que vivem o escotismo com amor e mantêm viva a missão do Nican Mopohua.
           </p>
         </section>
       </section>

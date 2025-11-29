@@ -16,7 +16,7 @@ const Section  = () => {
 
           <p className="Section_Glass__Texto">
             Entre em contato conosco 
-            <Link className="Section_Glass__Texto-Link" to="/Mapa"> clicando aqui </Link> 
+            <Link className="Section_Glass__Texto-Link" to="/Contato"> clicando aqui </Link> 
             ou venha fazer uma visita na nossa sede!
           </p>
 

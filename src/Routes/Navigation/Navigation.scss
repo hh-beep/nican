@@ -80,8 +80,12 @@
 
             &__Link {
                 border-bottom: 3px solid #2c2c2c;
-
+                width: auto;
                 
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
                 &-Text {
                     color: #2c2c2c;
                     font-size: 1.25rem;
